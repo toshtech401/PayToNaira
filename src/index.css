@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container,
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* header design starts here*/
+header {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  z-index: 10;
+  background: white;
+}
+
+.header {
+  padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 7rem;
+  height: 2rem;
+}
+
+.icon-toggle {
+  position: relative;
+}
+
+/* desktop wrap */
+.desktop-menu,
+.desktop-login {
+  display: none;
+}
+
+/* nav design starts here */
+.nav {
+  font-weight: 700;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.1rem;
+  background: hsl(257, 27%, 26%);
+  padding: 2rem 0;
+  color: white;
+  position: absolute;
+  top: 5.5rem;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.border {
+  height: 1px;
+  background: white;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.nav button {
+  padding: 1rem 0;
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 3rem;
+}
+
+/* article one starts here */
+.article-one {
+  padding: 6rem 0;
+}
+
+.worker {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 4rem;
+}
+
+.articleone-content {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.articleone-content h1 {
+  font-size: 2rem;
+}
+
+.articleone-content p {
+  padding: 0.8rem 0 1.1rem;
+  font-size: 1.1rem;
+}
+
+.articleone-content button {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  background: hsl(180, 66%, 49%);
+}
+
+/* form (shorten link) divison starts here */
+.gray-section {
+  background: hsl(0, 0%, 75%);
+  padding: 0.5rem 0;
+}
+
+.form {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: -5rem 0 3rem;
+  background: url("./images/bg-shorten-mobile.svg") no-repeat hsl(257, 27%, 26%)
+    top right;
+}
+
+.form input,
+.form button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.err {
+  font-style: italic;
+}
+
+.form input[type="text"] {
+  padding-left: 1rem;
+}
+
+.form button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  cursor: pointer;
+}
+
+/* Result design starts here */
+
+.result {
+  padding: 1rem 0;
+  background: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.old-link {
+  padding-bottom: 0.5rem;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  font-weight: bolder;
+}
+
+.result-line {
+  width: 100%;
+  border: 1px solid hsl(240, 2%, 76%);
+}
+
+.new-link {
+  padding: 1rem 0;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  color: hsl(180, 66%, 49%);
+  font-weight: bolder;
+}
+
+.result button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  height: 3rem;
+  width: 90%;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.result button.copied {
+  background: hsl(257, 27%, 26%);
+  cursor: pointer;
+}
+
+.noData {
+  color: #fff;
+  text-align: center;
+}
+
+/* article two starts here */
+.article-two {
+  text-align: center;
+  padding: 2rem 0 0;
+}
+
+.advanced-statistics h1 {
+  font-size: 1.5rem;
+  color: hsl(257, 27%, 26%);
+  padding-bottom: 0.8rem;
+}
+
+.advanced-statistics p {
+  color: hsl(257, 3%, 55%);
+}
+
+.brand-logo {
+  height: 5.5rem;
+  width: 5.5rem;
+  background: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  margin: -4rem auto 1rem;
+}
+
+.brand-logo img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 1.4rem;
+}
+
+.dashboard {
+  overflow: hidden;
+  position: relative;
+}
+
+.dashbox {
+  background: #fff;
+  margin: 5.5rem 0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  z-index: 9;
+  position: relative;
+}
+
+.dashbox h1 {
+  padding-bottom: 0.5rem;
+}
+
+.dashbox p {
+  color: hsl(0, 0%, 75%);
+}
+
+.dashboard-line {
+  width: 1.5rem;
+  height: 75%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background: hsl(180, 66%, 49%);
+}
+
+/* purple section starts here */
+.purple-section {
+  background: url("./images/bg-boost-mobile.svg") no-repeat hsl(257, 27%, 26%)
+    center center;
+  padding: 6.2rem 0;
+}
+
+.article-three {
+  text-align: center;
+}
+
+.article-three h1 {
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.article-three button {
+  background: hsl(180, 66%, 49%);
+  color: white;
+  height: 3rem;
+  width: 50%;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/* footer section */
+footer {
+  background: hsl(260, 8%, 14%);
+  padding: 2rem 0 0;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media div {
+  margin: 1.5rem 0.5rem 0;
+  cursor: pointer;
+}
+
+.first-line {
+  color: #fff;
+  padding: 2rem 0 1rem;
+}
+
+.li {
+  color: hsl(0, 0%, 75%);
+}
+
+@media only screen and (max-width: 350px) {
+  .articleone-content p,
+  .articleone-content button,
+  .form input,
+  .form button,
+  .nav,
+  .article-three button {
+    font-size: 1rem;
+  }
+
+  .nav button {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+
+  .worker {
+    object-position: 3rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .container,
+  .nav {
+    width: 80%;
+  }
+
+  .worker {
+    object-position: 6rem;
+  }
+
+  .purple-section {
+    background: url("./images/bg-boost-desktop.svg") no-repeat
+      hsl(257, 27%, 26%) center center;
+    padding: 4.7rem 0;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .worker {
+    object-position: 9rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 850px;
+  }
+
+  .icon-toggle {
+    display: none;
+  }
+
+  .desktop-menu,
+  .desktop-login,
+  .first-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-menu li,
+  .desktop-login p {
+    padding: 0 1.1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .desktop-login button {
+    background: hsl(180, 66%, 49%);
+    color: white;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .header-logo img {
+    margin: 0.6rem 0 0;
+    cursor: pointer;
+  }
+
+  /* article one desktop starts here */
+
+  .article-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    direction: rtl;
+    width: 850px;
+    margin: auto;
+    padding: 8rem 0 11rem;
+  }
+
+  .wrapper {
+    width: auto;
+  }
+
+  .articleone-content {
+    text-align: left;
+  }
+
+  .worker {
+    width: 120%;
+    height: 110%;
+    object-fit: cover;
+    object-position: 7rem;
+  }
+
+  .articleone-content h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .articleone-content button {
+    padding: 0.8rem 2.5rem;
+  }
+
+  /* shorten link design starts here */
+  .form {
+    border-radius: 0.8rem;
+    background: url("./images/bg-shorten-desktop.svg") no-repeat
+      hsl(257, 27%, 26%) top right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -5rem 0 3rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+  }
+
+  .form input {
+    width: 78%;
+    height: 3.5rem;
+  }
+
+  .form button {
+    width: 20%;
+    height: 3.5rem;
+  }
+
+  .form input[type="text"] {
+    padding-left: 2rem;
+  }
+
+  .form button {
+    background: hsl(180, 66%, 49%);
+    color: white;
+  }
+
+  .err {
+    position: absolute;
+    bottom: 0.5rem;
+  }
+
+  /* result design starts here */
+  .result {
+    padding: 1rem 1.5rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .old-link {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .result-line {
+    display: none;
+  }
+
+  .new-link {
+    padding: 1rem 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .result button {
+    width: 8rem;
+    margin-left: 1.5rem;
+  }
+
+  .result-copy {
+    display: flex;
+  }
+
+  /* article two design starts here */
+
+  .article-two {
+    padding: 4rem 0 0;
+  }
+
+  .advanced-statistics h1 {
+    font-size: 2rem;
+  }
+
+  .advanced-statistics p {
+    width: 50%;
+    margin: auto;
+  }
+
+  .brand-logo {
+    margin: -4rem 0.1rem 1rem;
+    text-align: center;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .dashbox {
+    text-align: left;
+  }
+
+  .dashboard-line {
+    width: 1.2rem;
+    transform: translate(-50%) rotate(-90deg);
+  }
+
+  .dashbox {
+    height: 18rem;
+  }
+
+  .detailed-records {
+    margin-top: 8.5rem;
+  }
+
+  .fully-customizable {
+    margin-top: 10.5rem;
+  }
+
+  /* purple section starts here */
+  .purple-section {
+    padding: 4rem 0;
+  }
+
+  .article-three h1 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .article-three button {
+    width: 12rem;
+  }
+
+  /* footer section */
+  footer {
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    margin-top: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1050px;
+  }
+
+  /* article one desktop starts here */
+
+  .article-one {
+    width: 1050px;
+    padding: 10rem 0 11rem;
+  }
+
+  .articleone-content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .articleone-content p {
+    width: 92%;
+    margin-right: auto;
+  }
+
+  .articleone-content button {
+    padding: 1rem 2.5rem;
+  }
+
+  /* shorten link design starts here */
+  .form {
+    padding: 2.5rem;
+  }
+
+  .form input {
+    height: 4rem;
+  }
+
+  .form button {
+    height: 4rem;
+  }
+
+  .err {
+    position: absolute;
+    bottom: 1.1rem;
+  }
+
+  /* article two design starts here */
+
+  .advanced-statistics h1 {
+    font-size: 2.5rem;
+  }
+
+  /* purple section starts here */
+  .purple-section {
+    padding: 4rem 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+
+  .article-one {
+    width: 1200px;
+  }
+
+  .desktop-menu li,
+  .desktop-login p {
+    padding: 0 2rem;
+  }
+
+  .articleone-content p {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  /* shorten link design starts here */
+  .form {
+    padding: 2.5rem;
+  }
+
+  .form input {
+    height: 4.5rem;
+  }
+
+  .form button {
+    height: 4.5rem;
+  }
+
+  .form input[type="text"] {
+    font-size: 1.3rem;
+  }
+
+  /* article two design starts here */
+
+  .advanced-statistics h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 1400px;
+  }
+
+  .article-one {
+    width: 1400px;
+  }
+}
