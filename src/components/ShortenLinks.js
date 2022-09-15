@@ -5,7 +5,7 @@ const ShortenLinks = ({ setInputValue }) => {
   const [errMessage, setErrMessage] = useState(false);
 
   const handleClick = () => {
-    if (value.length == 0) {
+    if (value.length === 0) {
       setErrMessage(true);
     } else {
       setInputValue(value);
