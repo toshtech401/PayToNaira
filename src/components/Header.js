@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "./logo.svg";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Nav from "./Nav";
@@ -18,7 +19,7 @@ const Header = () => {
         <div className="header">
           <div className="first-wrap">
             <div className="header-logo">
-              <img src="images/logo.svg" alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
             <div className="desktop-menu">
               {desktopMenu.map((dmenu) => (

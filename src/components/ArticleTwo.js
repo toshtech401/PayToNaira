@@ -1,3 +1,7 @@
+import brand from "./icon-brand-recognition.svg";
+import records from "./icon-detailed-records.svg";
+import customizable from "./icon-fully-customizable.svg";
+
 const ArticleTwo = () => {
   return (
     <article className="article-two">
@@ -12,10 +16,7 @@ const ArticleTwo = () => {
         <div className="dashboard-line"></div>
         <div className="brand-recognition dashbox" data-aos="fade-left">
           <div className="brand-logo">
-            <img
-              src="images/icon-brand-recognition.svg"
-              alt="brand-recognition"
-            />
+            <img src={brand} alt="brand-recognition" />
           </div>
           <h1>Brand Recognition</h1>
           <p>
@@ -25,10 +26,7 @@ const ArticleTwo = () => {
         </div>
         <div className="detailed-records dashbox" data-aos="fade-up-right">
           <div className="brand-logo">
-            <img
-              src="images/icon-detailed-records.svg"
-              alt="brand-recognition"
-            />
+            <img src={records} alt="detailed-records" />
           </div>
           <h1> Detailed Records</h1>
           <p>
@@ -38,10 +36,7 @@ const ArticleTwo = () => {
         </div>
         <div className="fully-customizable  dashbox" data-aos="flip-up">
           <div className="brand-logo">
-            <img
-              src="images/icon-fully-customizable.svg"
-              alt="brand-recognition"
-            />
+            <img src={customizable} alt="customizable" />
           </div>
           <h1>Fully Customizable</h1>
           <p>

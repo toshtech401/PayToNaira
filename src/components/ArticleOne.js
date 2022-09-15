@@ -1,3 +1,5 @@
+import illustration from "./illustration-working.svg";
+
 const ArticleOne = () => {
   return (
     <article
@@ -6,11 +8,7 @@ const ArticleOne = () => {
       data-aos-anchor-placement="top-center"
       data-aos-duration="1000"
     >
-      <img
-        src="images/illustration-working.svg"
-        alt="illustration-worker"
-        className="worker"
-      />
+      <img src={illustration} alt="illustration-worker" className="worker" />
       <div className="wrapper">
         <div className="articleone-content ">
           <h1>More than just shorter links</h1>
