@@ -40,9 +40,9 @@ const LinkResult = ({ inputValue }) => {
     return <p className="noData">Loading...</p>;
   }
 
-  if (error) {
-    return <p className="noData">Something went wrong </p>;
-  }
+  // if (error) {
+  //   return <p className="noData">Something went wrong </p>;
+  // }
 
   return (
     <>
