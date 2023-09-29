@@ -1,0 +1,32 @@
+.land{
+    background-color: #045089;
+}
+.body{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-top: 50px;
+}
+.body img{
+    height: 70vh;
+}
+.body h1{
+    width: 70%;
+    font-size: 40px;
+}
+.body p{
+    width: 75%;
+    font-size: large;
+}
+.text{
+    margin-left: 11%;
+}
+.text button{
+    background-color: 
+    #121212;
+    color: white;
+    font-size: large;
+    padding: 7px 25px;
+    border: none;
+    margin-top: 10px;
+}
